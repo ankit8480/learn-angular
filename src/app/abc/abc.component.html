@@ -1,0 +1,35 @@
+<table border="1px" align="center">
+    <th>Number</th>
+    <th>Sign</th>
+    <th>Multi</th>
+    <th>=</th>
+    <th>Result</th>
+    <tr *ngFor="let a of arr">
+<td>
+    {{value}}
+</td>
+<td>
+    x
+</td>
+<td>
+    {{a}}
+</td>
+<td>
+   =
+</td>
+<ng-container *ngIf="a*value%2==0">
+    <td>
+        Arpit
+    </td>
+</ng-container>
+<ng-container *ngIf="a*value%2!=0">
+    <td>
+        {{a*value}}
+    </td>
+</ng-container>
+    </tr>
+</table>
+
+
+<button (click)="value=value+1">Click Me</button>
+<!-- <router-outlet></router-outlet> -->
